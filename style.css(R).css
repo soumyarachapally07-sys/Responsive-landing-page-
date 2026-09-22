@@ -1,0 +1,396 @@
+/* ================= GENERAL SETTINGS ================= */
+
+/* Remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Smooth scrolling when clicking navigation links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* ================= NAVIGATION BAR ================= */
+
+header {
+    background-color: #16324f;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 20px;
+}
+
+/* Logo */
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Navigation list */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+/* Navigation links */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+
+    /* Smooth hover effect */
+    transition: 0.3s;
+}
+
+/* Navigation hover effect */
+.nav-links a:hover {
+    color: #55d6be;
+}
+
+
+/* ================= HERO SECTION ================= */
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #dff6ff,
+        #e8eaf6
+    );
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+/* Main heading */
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+    color: #16324f;
+}
+
+/* Hero paragraph */
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+
+/* ================= BUTTON ================= */
+
+.btn {
+    display: inline-block;
+
+    background-color: #16324f;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 13px 28px;
+
+    border-radius: 6px;
+
+    font-size: 17px;
+
+    transition: 0.3s;
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #55d6be;
+
+    /* Small movement when hovering */
+    transform: translateY(-3px);
+}
+
+
+/* ================= ABOUT SECTION ================= */
+
+.about {
+    padding: 80px 20px;
+
+    text-align: center;
+
+    max-width: 900px;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 35px;
+    color: #16324f;
+
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #555;
+}
+
+
+/* ================= COURSES SECTION ================= */
+
+.courses {
+    padding: 80px 20px;
+
+    background-color: #f5f7fa;
+
+    text-align: center;
+}
+
+.courses h2 {
+    font-size: 35px;
+    color: #16324f;
+
+    margin-bottom: 40px;
+}
+
+
+/* Course container */
+
+.course-container {
+    max-width: 1100px;
+    margin: auto;
+
+    /* CSS Flexbox */
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+/* Course card */
+
+.course-card {
+    background-color: white;
+
+    width: 300px;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+
+/* Card hover effect */
+
+.course-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Course heading */
+
+.course-card h3 {
+    font-size: 25px;
+
+    color: #16324f;
+
+    margin-bottom: 15px;
+}
+
+
+/* Course description */
+
+.course-card p {
+    color: #666;
+
+    margin-bottom: 20px;
+}
+
+
+/* Course button */
+
+.course-card button {
+    border: none;
+
+    background-color: #16324f;
+
+    color: white;
+
+    padding: 10px 20px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Course button hover */
+
+.course-card button:hover {
+    background-color: #55d6be;
+}
+
+
+/* ================= CONTACT SECTION ================= */
+
+.contact {
+    padding: 80px 20px;
+
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 35px;
+
+    color: #16324f;
+
+    margin-bottom: 15px;
+}
+
+.contact p {
+    font-size: 18px;
+
+    color: #555;
+
+    margin-bottom: 25px;
+}
+
+
+/* Contact button */
+
+.contact-btn {
+    display: inline-block;
+
+    background-color: #16324f;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 25px;
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #55d6be;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #16324f;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+
+/* Tablet */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 10px;
+    }
+
+    .hero {
+        min-height: 80vh;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .about h2,
+    .courses h2,
+    .contact h2 {
+        font-size: 28px;
+    }
+
+    .course-card {
+        width: 100%;
+    }
+
+}
